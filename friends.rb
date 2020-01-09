@@ -44,6 +44,17 @@ def everyones_snacks(people)
   return snacks.flatten
 end
 
+def everyones_snacks_string(people)
+  snacks = ''
+  for person in people
+    snacks_array = person[:favourites][:snacks]
+    for snack in snacks_array
+      snacks += snack + ', '
+    end
+  end
+  return snacks
+end
+
 def find_no_friends(people)
   no_friends = []
   for person in people

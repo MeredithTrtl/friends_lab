@@ -134,6 +134,11 @@ class TestFriends < MiniTest::Test
       assert_equal(result, ["charcuterie", "soup","bread", "Scooby snacks", "spaghetti", "ratatouille", "spinach"])
     end
 
+    def test_everyones_snacks_string
+      result = everyones_snacks_string(@people)
+      assert_equal(result, "charcuterie, soup, bread, Scooby snacks, spaghetti, ratatouille, spinach, ")
+    end
+
   # 9. Find people with no friends
   # (hint: return an array, there might be more people in the future with no friends!)
     def test_find_no_friends
