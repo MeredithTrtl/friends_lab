@@ -143,6 +143,6 @@ class TestFriends < MiniTest::Test
   # (hint: return an array, there might be more people in the future with no friends!)
     def test_find_no_friends
       result = find_no_friends(@people)
-      assert_equal(result, ["Daphne"])
+      assert_equal(result, [@person5])
     end
 end

@@ -59,7 +59,7 @@ def find_no_friends(people)
   no_friends = []
   for person in people
     if person[:friends].length < 1
-      no_friends.push(person[:name])
+      no_friends.push(person)
     end
   end
   return no_friends
